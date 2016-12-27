@@ -1,4 +1,4 @@
-export default class Preloader {
+module.exports = class Preloader {
   constructor() {
     this.data = null;
     this.callbackLoadedData = null;

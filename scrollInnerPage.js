@@ -1,5 +1,5 @@
-export default function(top) {
+module.exports = function(top, duration = 400, easing = 'linear') {
   $('html, body').animate({
     scrollTop: top
-  }, 400, 'easeOutCubic');
+  }, duration, easing);
 }

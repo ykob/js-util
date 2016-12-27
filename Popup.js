@@ -1,4 +1,4 @@
-export default class Popup {
+module.exports = class Popup {
   constructor($elm, name, width, height) {
     this.$elm = $elm;
     this.href = $elm.attr('href');

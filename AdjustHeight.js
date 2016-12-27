@@ -1,4 +1,4 @@
-export default class AdjustHeight {
+module.exports = class AdjustHeight {
   constructor($elm, num) {
     this.$elm = $elm;
     this.$elms = [];

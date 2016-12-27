@@ -1,4 +1,4 @@
-export default class FixBody {
+module.exports = class FixBody {
   constructor() {
     this.$window = $(window);
     this.$body = $('body');
