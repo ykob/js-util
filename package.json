@@ -1,0 +1,15 @@
+{
+  "name": "js-util",
+  "version": "1.0.0",
+  "description": "JavaScript utility functions for Web development.",
+  "author": {
+    "name": "yoichi kobayashi",
+    "url": "http://www.tplh.net/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykob/js-util.git"
+  },
+  "private": "true"
+}
