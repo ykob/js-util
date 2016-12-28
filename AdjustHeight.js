@@ -5,7 +5,7 @@ module.exports = class AdjustHeight {
     this.num = num;
     this.max = 0;
     this.adjust();
-    this.setEvent();
+    this.on();
   }
   adjust() {
     const _this = this;
@@ -24,7 +24,7 @@ module.exports = class AdjustHeight {
       }
     });
   }
-  setEvent() {
+  on() {
     $(window).on('resize', () => {
       this.$elm.attr('style', '');
       this.adjust();
