@@ -17,6 +17,7 @@ import isEdge from 'js-util/isEdge';
 import isIE from 'js-util/isIE';
 import isSmartphone from 'js-util/isSmartphone';
 import scrollInnerPage from 'js-util/scrollInnerPage';
+import splitStr from 'js-util/splitStr';
 ```
 
 ## classes
