@@ -27,6 +27,7 @@ import splitStr from 'js-util/splitStr';
 ```
 import AdjustHeight from 'js-util/AdjustHeight';
 import FixBody from 'js-util/FixBody';
+import MathEx from 'js-util/MathEx';
 import PopUp from 'js-util/PopUp';
 import Preloader from 'js-util/Preloader';
 ```
