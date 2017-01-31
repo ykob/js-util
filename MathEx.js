@@ -1,6 +1,4 @@
-module.exports = class MathEx {
-  constructor() {
-  }
+module.exports = {
   degrees(radian) {
     return radian / Math.PI * 180;
   }
