@@ -1,4 +1,4 @@
-module.exports = function(top, duration = 400, easing = 'linear') {
+module.exports = function(top, duration, easing) {
   $('html, body').animate({
     scrollTop: top
   }, duration, easing);
