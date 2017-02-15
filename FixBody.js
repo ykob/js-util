@@ -5,7 +5,7 @@ module.exports = class FixBody {
   set() {
     this.top = window.pageYOffset;
     document.body.style.position = 'fixed';
-    document.body.style.marginTop = `${this.top * -1}px`;
+    document.body.style.marginTop = this.top * -1 + 'px';
   }
   cancel() {
     document.body.style.position = 'static';
