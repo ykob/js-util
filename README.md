@@ -13,6 +13,7 @@ npm i git://github.com/ykob/js-util.git
 ### usage
 
 ```
+import animate from 'js-util/animate';
 import isEdge from 'js-util/isEdge';
 import isIE from 'js-util/isIE';
 import isSmartphone from 'js-util/isSmartphone';
