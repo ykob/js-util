@@ -14,6 +14,8 @@ npm i git://github.com/ykob/js-util.git
 
 ```
 import animate from 'js-util/animate';
+import debounce from 'js-util/debounce';
+import getUrlParam from 'js-util/getUrlParam';
 import isEdge from 'js-util/isEdge';
 import isIE from 'js-util/isIE';
 import isSmartphone from 'js-util/isSmartphone';
