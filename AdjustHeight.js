@@ -1,16 +1,13 @@
-module.exports = class AdjustHeight {
-  constructor($elm, num) {
-    this.$elm = $elm;
-    this.$elms = [];
-    this.num = num;
-    this.max = 0;
-    this.adjust();
-    this.on();
-  }
-  adjust() {
-    const _this = this;
+module.exports = function($elm, num) {
+  this.$elm = $elm;
+  this.$elms = [];
+  this.num = num;
+  this.max = 0;
+
+  this.adjust = function() {
+    var _this = this;
     this.$elm.each(function(i) {
-      const height = $(this).height();
+      var height = $(this).height();
       if (height > _this.max) {
         _this.max = height;
       }
@@ -24,10 +21,10 @@ module.exports = class AdjustHeight {
       }
     });
   }
-  on() {
-    $(window).on('resize', () => {
-      this.$elm.attr('style', '');
-      this.adjust();
-    });
+  this.resize = function() {
+    this.$elm.attr('style', '');
+    this.adjust();
   }
+
+  this.adjust();
 }
