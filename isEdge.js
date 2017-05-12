@@ -1,4 +1,4 @@
 module.exports = function() {
-  const ua = navigator.userAgent;
+  var ua = navigator.userAgent;
   return (ua.indexOf("Edge") > -1);
 }
