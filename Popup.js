@@ -1,34 +1,21 @@
-module.exports = class Popup {
-  constructor($elm, name, width, height) {
-    this.$elm = $elm;
-    this.href = $elm.attr('href');
+module.exports = function($elm, name, width, height) {
+  this.$elm = $elm;
+  this.href = $elm.attr('href');
+  this.name = (name) ? name : '';
+  this.width = (width) ? width : 600;
+  this.height = (height) ? height : 400;
 
-    if (name) {
-      this.name = name;
-    } else {
-      this.name = '';
-    }
-    if (width) {
-      this.width = width;
-    } else {
-      this.width = 600;
-    }
-    if (height) {
-      this.height = height;
-    } else {
-      this.height = 400;
-    }
-
-    this.$elm.on('click', () => {
-      this.open();
-      return false;
-    });
-  };
-  open() {
+  this.open = function() {
     window.open(
       this.href,
       this.name,
-      `width=${this.width},height=${this.height}`
+      'width=' + this.width + ',height=' + this.height
     );
   };
+
+  var _this = this;
+  this.$elm.on('click', function() {
+    _this.open();
+    return false;
+  });
 };
