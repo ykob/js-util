@@ -4,18 +4,18 @@ module.exports = function(elm) {
   this.isTouched = false;
 
   this.elm.addEventListener('touchstart', function() {
-    this.isTouched = true;
+    self.isTouched = true;
   }, false);
   this.elm.addEventListener('touchstartend', function() {
-    this.isTouched = true;
+    self.isTouched = false;
   }, false);
   this.elm.addEventListener('mouseover', function() {
-    if (this.isTouched) return;
+    if (self.isTouched) return;
     self.elm.classList.remove('is-leave');
     self.elm.classList.add('is-over');
   }, false);
   this.elm.addEventListener('mouseleave', function() {
-    if (this.isTouched) return;
+    if (self.isTouched) return;
     self.elm.classList.remove('is-over');
     self.elm.classList.add('is-leave');
   }, false);
