@@ -19,7 +19,8 @@ import getUrlParam from 'js-util/getUrlParam';
 import isEdge from 'js-util/isEdge';
 import isIE from 'js-util/isIE';
 import isSmartphone from 'js-util/isSmartphone';
-import scrollInnerPage from 'js-util/scrollInnerPage';
+import $scrollInnerPage from 'js-util/jquery.scrollInnerPage';
+import ScrollInnerPage from 'js-util/ScrollInnerPage';
 import splitStr from 'js-util/splitStr';
 ```
 
@@ -30,6 +31,7 @@ import splitStr from 'js-util/splitStr';
 ```
 import AdjustHeight from 'js-util/AdjustHeight';
 import FixBody from 'js-util/FixBody';
+import Hover from 'js-util/Hover';
 import MathEx from 'js-util/MathEx';
 import PopUp from 'js-util/PopUp';
 import Preloader from 'js-util/Preloader';
