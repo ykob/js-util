@@ -16,8 +16,10 @@ npm i git://github.com/ykob/js-util.git
 import animate from 'js-util/animate';
 import debounce from 'js-util/debounce';
 import getUrlParam from 'js-util/getUrlParam';
+import isAndroid from 'js-util/isAndroid';
 import isEdge from 'js-util/isEdge';
 import isIE from 'js-util/isIE';
+import isiOS from 'js-util/isiOS';
 import isSmartphone from 'js-util/isSmartphone';
 import $scrollInnerPage from 'js-util/jquery.scrollInnerPage';
 import ScrollInnerPage from 'js-util/ScrollInnerPage';
