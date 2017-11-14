@@ -13,17 +13,16 @@ npm i git://github.com/ykob/js-util.git
 ### usage
 
 ```
-import animate from 'js-util/animate';
-import debounce from 'js-util/debounce';
-import getUrlParam from 'js-util/getUrlParam';
-import isAndroid from 'js-util/isAndroid';
-import isEdge from 'js-util/isEdge';
-import isIE from 'js-util/isIE';
-import isiOS from 'js-util/isiOS';
-import isSmartphone from 'js-util/isSmartphone';
-import $scrollInnerPage from 'js-util/jquery.scrollInnerPage';
-import ScrollInnerPage from 'js-util/ScrollInnerPage';
-import splitStr from 'js-util/splitStr';
+const debounce = require('js-util/debounce');
+const getRandomArbitrary = require('js-util/getRandomArbitrary');
+const getRandomInt = require('js-util/getRandomInt');
+const getUrlParam = require('js-util/getUrlParam');
+const isAndroid = require('js-util/isAndroid');
+const isEdge = require('js-util/isEdge');
+const isIE = require('js-util/isIE');
+const isiOS = require('js-util/isiOS');
+const isSmartphone = require('js-util/isSmartphone');
+const splitStr = require('js-util/splitStr');
 ```
 
 ## classes
@@ -31,10 +30,9 @@ import splitStr from 'js-util/splitStr';
 ### usage
 
 ```
-import AdjustHeight from 'js-util/AdjustHeight';
-import FixBody from 'js-util/FixBody';
-import Hover from 'js-util/Hover';
-import MathEx from 'js-util/MathEx';
-import PopUp from 'js-util/PopUp';
-import Preloader from 'js-util/Preloader';
+const FixBody = require('js-util/FixBody');
+const Hover = require('js-util/Hover');
+const MathEx = require('js-util/MathEx');
+const PopUp = require('js-util/PopUp');
+const ScrollInnerPage = require('js-util/ScrollInnerPage');
 ```
