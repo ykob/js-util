@@ -17,5 +17,11 @@ module.exports = {
       Math.sin(radian1) * radius,
       Math.cos(radian1) * Math.sin(radian2) * radius,
     ];
-  }
+  },
+  randomArbitrary: function(min, max) {
+    return Math.random() * (max - min) + min;
+  },
+  randomInt: function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  },
 }
