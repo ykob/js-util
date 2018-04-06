@@ -19,14 +19,4 @@ module.exports = function(elm) {
     self.elm.classList.remove('is-over');
     self.elm.classList.add('is-leave');
   }, false);
-  this.elm.addEventListener('transitionend', function() {
-    if (self.elm.classList.contains('is-leave')) {
-      self.elm.classList.remove('is-leave');
-    }
-  }, false);
-  this.elm.addEventListener('animationend', function() {
-    if (self.elm.classList.contains('is-leave')) {
-      self.elm.classList.remove('is-leave');
-    }
-  }, false);
 }
