@@ -14,6 +14,11 @@ module.exports = {
   step: function(e, x) {
     return (x >= e) ? 1 : 0;
   },
+  smoothstep: function(e, x) {
+    if (e0 >= e1) return undefined;
+    var t = MathEx.clamp((x - e0) / (e1 - e0), 0, 1);
+    return t * t * (3 - 2 * t);
+  },
   spherical: function(radian1, radian2, radius) {
     return [
       Math.cos(radian1) * Math.cos(radian2) * radius,
