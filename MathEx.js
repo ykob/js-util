@@ -12,7 +12,7 @@ module.exports = {
     return x1 * (1 - a) + x2 * a;
   },
   step: function(e, x) {
-    return (e >= x) ? 1 : 0;
+    return (x >= e) ? 1 : 0;
   },
   spherical: function(radian1, radian2, radius) {
     return [
