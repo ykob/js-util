@@ -11,6 +11,9 @@ module.exports = {
   mix: function(x1, x2, a) {
     return x1 * (1 - a) + x2 * a;
   },
+  step: function(e, x) {
+    return (e >= x) ? 1 : 0;
+  },
   spherical: function(radian1, radian2, radius) {
     return [
       Math.cos(radian1) * Math.cos(radian2) * radius,
