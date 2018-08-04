@@ -14,7 +14,7 @@ module.exports = {
   step: function(e, x) {
     return (x >= e) ? 1 : 0;
   },
-  smoothstep: function(e, x) {
+  smoothstep: function(e0, e1, x) {
     if (e0 >= e1) return undefined;
     var t = MathEx.clamp((x - e0) / (e1 - e0), 0, 1);
     return t * t * (3 - 2 * t);
