@@ -16,7 +16,7 @@ module.exports = {
   },
   smoothstep: function(e0, e1, x) {
     if (e0 >= e1) return undefined;
-    var t = MathEx.clamp((x - e0) / (e1 - e0), 0, 1);
+    var t = Math.min(Math.max((x - e0) / (e1 - e0), 0), 1);
     return t * t * (3 - 2 * t);
   },
   spherical: function(radian1, radian2, radius) {
