@@ -12,6 +12,9 @@
     "url": "https://github.com/ykob/js-util.git"
   },
   "private": "true",
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
     "ts-loader": "^9.2.6",
     "typescript": "^4.6.2",
