@@ -11,5 +11,9 @@
     "type": "git",
     "url": "https://github.com/ykob/js-util.git"
   },
-  "private": "true"
+  "private": "true",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
 }
