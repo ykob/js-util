@@ -1,10 +1,10 @@
 {
   "name": "js-util",
   "version": "2.0.0",
-  "description": "JavaScript utility functions for Web development.",
+  "description": "JavaScript utility functions created by @ykob",
   "author": {
     "name": "yoichi kobayashi",
-    "url": "http://www.tplh.net/"
+    "url": "https://www.tplh.net/"
   },
   "license": "MIT",
   "repository": {
