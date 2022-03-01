@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/ykob/js-util.git"
   },
-  "private": "true",
+  "private": true,
   "scripts": {
     "build": "webpack"
   },
