@@ -16,7 +16,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc --project . --module es2015 --outDir ./dist",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
