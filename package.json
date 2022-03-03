@@ -12,8 +12,10 @@
     "url": "https://github.com/ykob/js-util.git"
   },
   "private": true,
+  "main": "dist/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "tsc --project . --module es2015 --outDir ./dist",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "typescript": "^4.6.2"

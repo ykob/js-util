@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "module": "ES6",
     "sourceMap": true,
+    "strict": true,
     "target": "ES6"
   }
 }
