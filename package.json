@@ -13,6 +13,7 @@
   },
   "private": true,
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc --project . --module es2015 --outDir ./dist",
     "prepare": "npm run build"
