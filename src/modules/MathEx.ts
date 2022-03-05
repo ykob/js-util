@@ -1,18 +1,12 @@
 const MathEx = {
-  degrees: (radian: number): number => {
-    return radian / Math.PI * 180
-  },
-  radians: (degree: number): number => {
-    return degree * Math.PI / 180
-  },
   clamp: (value: number, min: number, max: number): number => {
     return Math.min(Math.max(value, min), max)
   },
+  degrees: (radian: number): number => {
+    return radian / Math.PI * 180
+  },
   mix: (x1: number, x2: number, a: number): number => {
     return x1 * (1 - a) + x2 * a
-  },
-  step: (e: number, x: number): number => {
-    return (x >= e) ? 1 : 0
   },
   smoothstep: (e0: number, e1: number, x: number): number => {
     if (e0 >= e1) return 0
@@ -26,11 +20,17 @@ const MathEx = {
       Math.cos(radian1) * Math.sin(radian2) * radius,
     ]
   },
+  radians: (degree: number): number => {
+    return degree * Math.PI / 180
+  },
   randomArbitrary: (min: number, max: number): number => {
     return Math.random() * (max - min) + min
   },
   randomInt: (min: number, max: number): number => {
     return Math.floor(Math.random() * (max - min + 1)) + min
+  },
+  step: (e: number, x: number): number => {
+    return (x >= e) ? 1 : 0
   },
 }
 
