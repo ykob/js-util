@@ -9,7 +9,7 @@ export const mix = (x1: number, x2: number, a: number): number => {
 }
 export const smoothstep = (e0: number, e1: number, x: number): number => {
   if (e0 >= e1) return 0
-  var t = Math.min(Math.max((x - e0) / (e1 - e0), 0), 1)
+  const t = Math.min(Math.max((x - e0) / (e1 - e0), 0), 1)
   return t * t * (3 - 2 * t)
 }
 export const spherical = (radian1: number, radian2: number, radius: number): [number, number, number] => {
