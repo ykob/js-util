@@ -1,6 +1,7 @@
 import {
   clamp,
   degrees,
+  mix,
   radians,
 } from '../modules/MathEx'
 
@@ -41,6 +42,20 @@ describe('clamp', () => {
 
       expect(clamp(value, min, max)).toBe(value)
     })
+  })
+})
+
+describe('mix', () => {
+  test('basic', () => {
+    expect(mix(-100, 100, 0.25)).toBe(-50)
+  })
+
+  test('the alpha argument value is more than 1.', () => {
+    expect(mix(-100, 100, 1.1)).toBeCloseTo(120, 5)
+  })
+
+  test('the alpha argument value is less than 0.', () => {
+    expect(mix(-100, 100, -0.1)).toBeCloseTo(-120, 5)
   })
 })
 
