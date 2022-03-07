@@ -7,6 +7,15 @@ export const degrees = (radian: number): number => {
 export const mix = (x1: number, x2: number, a: number): number => {
   return x1 * (1 - a) + x2 * a
 }
+export const radians = (degree: number): number => {
+  return degree * Math.PI / 180
+}
+export const randomArbitrary = (min: number, max: number): number => {
+  return Math.random() * (max - min) + min
+}
+export const randomInt = (min: number, max: number): number => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
 export const smoothstep = (e0: number, e1: number, x: number): number => {
   if (e0 >= e1) return 0
   const t = Math.min(Math.max((x - e0) / (e1 - e0), 0), 1)
@@ -19,15 +28,6 @@ export const spherical = (radian1: number, radian2: number, radius: number): [nu
     Math.cos(radian1) * Math.sin(radian2) * radius,
   ]
 }
-export const radians = (degree: number): number => {
-  return degree * Math.PI / 180
-}
-export const randomArbitrary = (min: number, max: number): number => {
-  return Math.random() * (max - min) + min
-}
-export const randomInt = (min: number, max: number): number => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
 export const step = (e: number, x: number): number => {
   return (x >= e) ? 1 : 0
 }
@@ -36,10 +36,10 @@ export default {
   clamp,
   degrees,
   mix,
-  smoothstep,
-  spherical,
   radians,
   randomArbitrary,
   randomInt,
+  smoothstep,
+  spherical,
   step,
 }
