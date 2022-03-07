@@ -3,6 +3,7 @@ import {
   degrees,
   mix,
   radians,
+  step,
 } from '../modules/MathEx'
 
 describe('clamp', () => {
@@ -65,4 +66,22 @@ test('degrees', () => {
 
 test('radians', () => {
   expect(radians(90)).toBe(Math.PI * 0.5)
+})
+
+describe('step', () => {
+  describe('the edge is 10', () => {
+    const e = 10
+
+    test('and the value is -10.', () => {
+      expect(step(e, -10)).toBe(0)
+    })
+
+    test('and the value is 10.', () => {
+      expect(step(e, 10)).toBe(1)
+    })
+
+    test('and the value is 20.', () => {
+      expect(step(e, 20)).toBe(1)
+    })
+  })
 })
