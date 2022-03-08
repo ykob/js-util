@@ -23,9 +23,9 @@ export const smoothstep = (e0: number, e1: number, x: number): number => {
 }
 export const spherical = (radian1: number, radian2: number, radius: number): [number, number, number] => {
   return [
-    Math.cos(radian1) * Math.cos(radian2) * radius,
-    Math.sin(radian1) * radius,
-    Math.cos(radian1) * Math.sin(radian2) * radius,
+    Math.sin(radian1) * Math.cos(radian2) * radius,
+    Math.cos(radian1) * radius,
+    Math.sin(radian1) * Math.sin(radian2) * radius,
   ]
 }
 export const step = (e: number, x: number): number => {
