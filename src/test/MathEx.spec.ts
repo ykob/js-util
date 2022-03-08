@@ -3,6 +3,7 @@ import {
   degrees,
   mix,
   radians,
+  spherical,
   step,
 } from '../modules/MathEx'
 
@@ -66,6 +67,24 @@ test('degrees', () => {
 
 test('radians', () => {
   expect(radians(90)).toBe(Math.PI * 0.5)
+})
+
+describe('spherical', () => {
+  test('the position to back', () => {
+    const p = spherical(radians(90), 0, 10)
+
+    expect(p[0]).toBeCloseTo(10, 5)
+    expect(p[1]).toBeCloseTo(0, 5)
+    expect(p[2]).toBeCloseTo(0, 5)
+  })
+
+  test('the position to top', () => {
+    const p = spherical(0, radians(90), 10)
+
+    expect(p[0]).toBeCloseTo(0, 5)
+    expect(p[1]).toBeCloseTo(10, 5)
+    expect(p[2]).toBeCloseTo(0, 5)
+  })
 })
 
 describe('step', () => {
