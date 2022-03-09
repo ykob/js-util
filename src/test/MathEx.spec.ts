@@ -3,6 +3,7 @@ import {
   degrees,
   mix,
   radians,
+  smoothstep,
   spherical,
   step,
 } from '../modules/MathEx'
@@ -67,6 +68,20 @@ test('degrees', () => {
 
 test('radians', () => {
   expect(radians(90)).toBe(Math.PI * 0.5)
+})
+
+describe('smoothstep', () => {
+  test('the alpha argument value is more than 1.', () => {
+    expect(smoothstep(-100, 100, 110)).toBeCloseTo(1, 5)
+  })
+
+  test('the alpha argument value is less than 0.', () => {
+    expect(smoothstep(-100, 100, -110)).toBeCloseTo(0, 5)
+  })
+
+  test('the alpha argument value is at the midpoint.', () => {
+    expect(smoothstep(-100, 100, 0)).toBeCloseTo(0.5, 5)
+  })
 })
 
 describe('spherical', () => {
