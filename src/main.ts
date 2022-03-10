@@ -4,10 +4,4 @@ import sleep from './modules/sleep'
 import splitNum from './modules/splitNum'
 import zeroPadding from './modules/zeroPadding'
 
-export {
-  debounce,
-  MathEx,
-  sleep,
-  splitNum,
-  zeroPadding,
-}
+export { debounce, MathEx, sleep, splitNum, zeroPadding }

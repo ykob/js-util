@@ -16,7 +16,7 @@ describe('clamp', () => {
     test('value is less than 0.', () => {
       expect(clamp(-1, min, max)).toBe(min)
     })
-  
+
     test('value is more than 1.', () => {
       expect(clamp(2, min, max)).toBe(max)
     })
@@ -35,7 +35,7 @@ describe('clamp', () => {
     test('value is less than 0.', () => {
       expect(clamp(-200, min, max)).toBe(min)
     })
-  
+
     test('value is more than 1.', () => {
       expect(clamp(200, min, max)).toBe(max)
     })
