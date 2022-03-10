@@ -3,8 +3,11 @@
     "declaration": true,
     "esModuleInterop": true,
     "module": "ES6",
+    "moduleResolution": "node",
     "sourceMap": true,
     "strict": true,
     "target": "ES6"
-  }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "include": ["src/**/*"]
 }
