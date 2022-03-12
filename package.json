@@ -3,8 +3,9 @@
   "version": "2.0.0",
   "description": "Private JavaScript utility functions created by @ykob",
   "author": {
-    "name": "yoichi kobayashi",
-    "url": "https://github.com/ykob"
+    "name": "Yoichi Kobayashi",
+    "email": "info@tplh.net",
+    "url": "https://www.tplh.net/"
   },
   "license": "MIT",
   "repository": {
