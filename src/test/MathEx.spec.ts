@@ -4,6 +4,7 @@ import {
   mix,
   radians,
   randomArbitrary,
+  randomInt,
   smoothstep,
   spherical,
   step,
@@ -81,6 +82,10 @@ test('radians', () => {
 
 test('randomArbitrary', () => {
   expect(randomArbitrary(1, 10)).toBe(5.5)
+})
+
+test('randomInt', () => {
+  expect(randomInt(1, 10)).toBe(6)
 })
 
 describe('smoothstep', () => {
