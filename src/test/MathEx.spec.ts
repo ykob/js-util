@@ -3,10 +3,19 @@ import {
   degrees,
   mix,
   radians,
+  randomArbitrary,
   smoothstep,
   spherical,
   step,
 } from '../modules/MathEx'
+
+// The preparation to test functions that are using Math.random().
+// ---
+const mockMath = Object.create(global.Math)
+
+mockMath.random = () => 0.5
+global.Math = mockMath
+// ---
 
 describe('clamp', () => {
   describe('range is from 0 to 1', () => {
@@ -68,6 +77,10 @@ test('degrees', () => {
 
 test('radians', () => {
   expect(radians(90)).toBe(Math.PI * 0.5)
+})
+
+test('randomArbitrary', () => {
+  expect(randomArbitrary(1, 10)).toBe(5.5)
 })
 
 describe('smoothstep', () => {
