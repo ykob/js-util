@@ -10,13 +10,7 @@ import {
   step,
 } from '../modules/MathEx'
 
-// The preparation to test functions that are using Math.random().
-// ---
-const mockMath = Object.create(global.Math)
-
-mockMath.random = () => 0.5
-global.Math = mockMath
-// ---
+const random = jest.spyOn(global.Math, 'random')
 
 describe('clamp', () => {
   describe('range is from 0 to 1', () => {
@@ -80,12 +74,34 @@ test('radians', () => {
   expect(radians(90)).toBe(Math.PI * 0.5)
 })
 
-test('randomArbitrary', () => {
-  expect(randomArbitrary(1, 10)).toBe(5.5)
-})
+describe('using Math.random', () => {
+  describe('Math.random return 0.2', () => {
+    beforeEach(() => {
+      random.mockReturnValue(0.2);
+    })
 
-test('randomInt', () => {
-  expect(randomInt(1, 10)).toBe(6)
+    test('randomArbitrary', () => {
+      expect(randomArbitrary(1, 10)).toBeCloseTo(2.8)
+    })
+    
+    test('randomInt', () => {
+      expect(randomInt(1, 10)).toBe(3)
+    })
+  })
+
+  describe('Math.random return 0.5', () => {
+    beforeEach(() => {
+      random.mockReturnValue(0.5);
+    })
+
+    test('randomArbitrary', () => {
+      expect(randomArbitrary(1, 10)).toBe(5.5)
+    })
+    
+    test('randomInt', () => {
+      expect(randomInt(1, 10)).toBe(6)
+    })
+  })
 })
 
 describe('smoothstep', () => {
