@@ -1,15 +1,40 @@
 {
-  "name": "js-util",
-  "version": "1.0.5",
-  "description": "JavaScript utility functions for Web development.",
+  "name": "@ykob/js-util",
+  "version": "2.0.0",
+  "description": "Private JavaScript utility functions created by @ykob",
   "author": {
-    "name": "yoichi kobayashi",
-    "url": "http://www.tplh.net/"
+    "name": "Yoichi Kobayashi",
+    "email": "info@tplh.net",
+    "url": "https://www.tplh.net/"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ykob/js-util.git"
   },
-  "private": "true"
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project . --module es2015 --outDir ./dist",
+    "lint:eslint": "eslint --ext \".js,.ts\" --ignore-path .gitignore . --fix",
+    "lint:prettier": "prettier . --check --write src/**/*",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^27.5.1",
+    "prettier": "2.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  }
 }
