@@ -14,7 +14,7 @@ export const randomArbitrary = (min: number, max: number): number => {
   return Math.random() * (max - min) + min
 }
 export const randomInt = (min: number, max: number): number => {
-  return Math.round(Math.random() * (max - min)) + min
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 export const smoothstep = (e0: number, e1: number, x: number): number => {
   if (e0 >= e1) return 0
