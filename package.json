@@ -19,7 +19,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc --project . --module es2015 --outDir ./dist",
+    "prebuild": "rimraf dist",
+    "build": "tsc -p .",
     "lint:eslint": "eslint --ext \".js,.ts\" --ignore-path .gitignore . --fix",
     "lint:prettier": "prettier . --check --write src/**/*",
     "lint": "npm run lint:eslint && npm run lint:prettier",
