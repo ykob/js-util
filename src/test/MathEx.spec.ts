@@ -77,13 +77,13 @@ test('radians', () => {
 describe('using Math.random', () => {
   describe('Math.random return 0', () => {
     beforeEach(() => {
-      random.mockReturnValue(0);
+      random.mockReturnValue(0)
     })
 
     test('randomArbitrary', () => {
       expect(randomArbitrary(1, 10)).toBeCloseTo(1, 3)
     })
-    
+
     test('randomInt', () => {
       expect(randomInt(1, 10)).toBe(1)
     })
@@ -91,13 +91,13 @@ describe('using Math.random', () => {
 
   describe('Math.random return 0.25', () => {
     beforeEach(() => {
-      random.mockReturnValue(0.25);
+      random.mockReturnValue(0.25)
     })
 
     test('randomArbitrary', () => {
       expect(randomArbitrary(1, 10)).toBeCloseTo(3.25, 3)
     })
-    
+
     test('randomInt', () => {
       expect(randomInt(1, 10)).toBe(3)
     })
@@ -105,13 +105,13 @@ describe('using Math.random', () => {
 
   describe('Math.random return 0.5', () => {
     beforeEach(() => {
-      random.mockReturnValue(0.5);
+      random.mockReturnValue(0.5)
     })
 
     test('randomArbitrary', () => {
       expect(randomArbitrary(1, 10)).toBeCloseTo(5.5, 3)
     })
-    
+
     test('randomInt', () => {
       expect(randomInt(1, 10)).toBe(6)
     })
@@ -119,13 +119,13 @@ describe('using Math.random', () => {
 
   describe('Math.random return 0.75', () => {
     beforeEach(() => {
-      random.mockReturnValue(0.75);
+      random.mockReturnValue(0.75)
     })
 
     test('randomArbitrary', () => {
       expect(randomArbitrary(1, 10)).toBeCloseTo(7.75, 3)
     })
-    
+
     test('randomInt', () => {
       expect(randomInt(1, 10)).toBe(8)
     })
@@ -133,13 +133,13 @@ describe('using Math.random', () => {
 
   describe('Math.random return 0.99999', () => {
     beforeEach(() => {
-      random.mockReturnValue(0.99999);
+      random.mockReturnValue(0.99999)
     })
 
     test('randomArbitrary', () => {
       expect(randomArbitrary(1, 10)).toBeCloseTo(10, 3)
     })
-    
+
     test('randomInt', () => {
       expect(randomInt(1, 10)).toBe(10)
     })
