@@ -18,7 +18,7 @@ WIP
 
 ## Usage
 
-### debounce
+### `debounce`
 
 Thinning out a function running continuously.
 
@@ -31,7 +31,7 @@ const resize = () => {
 window.addEventListener('resize', debounce(resize, 100))
 ```
 
-### MathEx
+### `MathEx`
 
 My own expansions of the standard Math functions.
 
@@ -39,7 +39,7 @@ My own expansions of the standard Math functions.
 import { MathEx } from '@ykob/js-util'
 ```
 
-### sleep
+### `sleep`
 
 Returning a blank Promise that has a timer for await.
 
@@ -51,7 +51,7 @@ const asyncFunc = async () => {
 }
 ```
 
-### splitNum
+### `splitNum`
 
 Returning a number array that is split an original number by digit.
 
@@ -61,7 +61,7 @@ import { splitNum } from '@ykob/js-util'
 const arr = splitNum(123) // toEqual [1, 2, 3]
 ```
 
-### zeroPadding
+### `zeroPadding`
 
 Returning a number string that is applied zero padding.
 
