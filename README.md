@@ -20,7 +20,7 @@ WIP
 
 ### `debounce`
 
-Thinning out a function running continuously.
+Thin out a function running continuously.
 
 ```
 import { debounce } from '@ykob/js-util'
@@ -53,7 +53,7 @@ const asyncFunc = async () => {
 
 ### `splitNum`
 
-Returning a number array that is split an original number by digit.
+Return a number array that is split an original number by digit.
 
 ```
 import { splitNum } from '@ykob/js-util'
@@ -63,7 +63,7 @@ const arr = splitNum(123) // toEqual [1, 2, 3]
 
 ### `zeroPadding`
 
-Returning a number string that is applied zero padding.
+Return a number string that is applied zero padding.
 
 ```
 import { zeroPadding } from '@ykob/js-util'
