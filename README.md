@@ -18,7 +18,7 @@ WIP
 
 ## Usage
 
-### `debounce`
+### `debounce(callback: (event: unknown) => void, duration: number): ((event?: unknown) => void)`
 
 Thin out a function running continuously.
 
@@ -41,7 +41,9 @@ import { MathEx } from '@ykob/js-util'
 
 ### `sleep`
 
-Returning a blank Promise that has a timer for await.
+### `sleep(delay: number): Promise<void>`
+
+Return `Promise<void>` that awaits for the time `delay`.
 
 ```
 import { sleep } from '@ykob/js-util'
@@ -51,9 +53,9 @@ const asyncFunc = async () => {
 }
 ```
 
-### `splitNum`
+### `splitNum(num: number): number[]`
 
-Return a number array that is split an original number by digit.
+Return a number array that is split `num` by `digit`.
 
 ```
 import { splitNum } from '@ykob/js-util'
@@ -61,9 +63,10 @@ import { splitNum } from '@ykob/js-util'
 const arr = splitNum(123) // toEqual [1, 2, 3]
 ```
 
-### `zeroPadding`
+### `zeroPadding(num: number, digit: number): string`
 
-Return a number string that is applied zero padding.
+Return a number string that is applied "Zero Padding" to `num`.  
+Defined the digits of "Zero Padding" by `digit`.
 
 ```
 import { zeroPadding } from '@ykob/js-util'
