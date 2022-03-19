@@ -1,4 +1,7 @@
-const debounce = (callback: (event: unknown) => void, duration: number) => {
+const debounce = (
+  callback: (event: unknown) => void,
+  duration: number
+): ((event?: unknown) => void) => {
   let timer: ReturnType<typeof setTimeout>
 
   return (event?: unknown) => {
