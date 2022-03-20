@@ -1,14 +1,14 @@
 export const clamp = (value: number, min: number, max: number): number => {
   return Math.min(Math.max(value, min), max)
 }
-export const degrees = (radian: number): number => {
-  return (radian / Math.PI) * 180
+export const degrees = (radians: number): number => {
+  return (radians / Math.PI) * 180
 }
 export const mix = (x1: number, x2: number, a: number): number => {
   return x1 * (1 - a) + x2 * a
 }
-export const radians = (degree: number): number => {
-  return (degree * Math.PI) / 180
+export const radians = (degrees: number): number => {
+  return (degrees * Math.PI) / 180
 }
 export const randomArbitrary = (min: number, max: number): number => {
   return Math.random() * (max - min) + min
