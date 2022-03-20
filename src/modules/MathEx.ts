@@ -4,8 +4,8 @@ export const clamp = (value: number, min: number, max: number): number => {
 export const degrees = (radians: number): number => {
   return (radians / Math.PI) * 180
 }
-export const mix = (x1: number, x2: number, a: number): number => {
-  return x1 * (1 - a) + x2 * a
+export const mix = (x0: number, x1: number, a: number): number => {
+  return x0 * (1 - a) + x1 * a
 }
 export const radians = (degrees: number): number => {
   return (degrees * Math.PI) / 180
