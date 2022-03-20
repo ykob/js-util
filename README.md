@@ -39,7 +39,33 @@ My own expansions of the standard Math functions.
 import { MathEx } from '@ykob/js-util'
 ```
 
-### `sleep`
+#### `MathEx.clamp(value: number, min: number, max: number): number`
+
+Constrain `value` to be between `min` and `max`.
+
+#### `MathEx.degrees(radians: number): number`
+
+Convert a quantity in `radians` to degrees.
+
+#### `MathEx.mix(x0: number, x1: number, a: number): number`
+
+Return a point of 'a' with Linear interpolation between `x0` and `x1`.
+
+#### `MathEx.radians(degrees: number): number`
+
+Convert a quantity in `degrees` to radians.
+
+#### `MathEx.randomArbitrary(min: number, max: number): number`
+
+#### `MathEx.randomInt(min: number, max: number): number`
+
+#### `MathEx.smoothstep(e0: number, e1: number, x: number): number`
+
+#### `MathEx.spherical(radian1: number, radian2: number, radius: number): number`
+
+#### `MathEx.step(edge: number, x: number): number`
+
+Return `0` if `x` is less than `edge`, and return `1` otherwise.
 
 ### `sleep(delay: number): Promise<void>`
 
