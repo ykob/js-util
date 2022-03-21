@@ -63,6 +63,8 @@ Convert a quantity in `degrees` to radians.
 
 #### `MathEx.spherical(radian1: number, radian2: number, radius: number): number`
 
+Return [the Spherical coordinate](https://en.wikipedia.org/wiki/Spherical_coordinate_system) as a number array.
+
 #### `MathEx.step(edge: number, x: number): number`
 
 Return `0` if `x` is less than `edge`, and return `1` otherwise.
