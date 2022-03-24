@@ -26,8 +26,8 @@
     "prebuild": "rimraf dist",
     "build": "tsc -p .",
     "lint:eslint": "eslint --ext \".js,.ts\" --ignore-path .gitignore . --fix",
-    "lint:prettier": "prettier . --check --write src/**/*",
-    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:prettier": "prettier --write src/**/*",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
     "prepare": "npm run build",
     "test": "jest"
   },
