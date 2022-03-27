@@ -57,7 +57,11 @@ Convert a quantity in `degrees` to radians.
 
 #### `MathEx.randomArbitrary(min: number, max: number): number`
 
+Return a random floating number between `min` and `max`.
+
 #### `MathEx.randomInt(min: number, max: number): number`
+
+Return a random integer between `min` and `max`.
 
 #### `MathEx.smoothstep(e0: number, e1: number, x: number): number`
 
