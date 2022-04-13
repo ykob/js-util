@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/ykob/js-util.git"
   },
-  "private": true,
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
