@@ -14,7 +14,17 @@ Private JavaScript utility functions created by [@ykob](https://github.com/ykob)
 
 ## Install
 
-WIP
+### npm
+
+```
+npm i @ykob/js-util
+```
+
+### yarn
+
+```
+yarn add @ykob/js-util
+```
 
 ## Usage
 
